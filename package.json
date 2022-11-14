@@ -1,14 +1,25 @@
 {
-  "name": "cypressautomation",
+  "name": "cypresspractices",
   "version": "1.0.0",
-  "description": "",
+  "description": "Practices of Cypress Automation",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AuroraE26/CypressPractices.git"
+  },
+  "keywords": [
+    "Cypress"
+  ],
+  "author": "Aurora Escalera",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AuroraE26/CypressPractices/issues"
+  },
+  "homepage": "https://github.com/AuroraE26/CypressPractices#readme",
   "dependencies": {
-    "cypress": "^10.10.0"
+    "cypress": "^11.0.1"
   }
 }
