@@ -1,5 +1,5 @@
 {
   "name": "Bob",
   "gender": "Male",
-  "": ["Blackberry","Nokia Edge"]
+  "productName": ["Blackberry","Nokia Edge"]
 }

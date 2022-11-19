@@ -1,5 +1,5 @@
 /*
-TEST 18: PARAMETERIZING TEST DATA [CONTINUE CODE 17]
+TEST 18: PARAMETERIZING TEST DATA [CONTINUE CODE 17].
 This test takes multiple products of the json file [an array of products] and parameterize the
 test data using each command.
 
