@@ -1,6 +1,6 @@
 class ProductName{
     checkOutButton(){
-        return cy.get('#navbarResponsive > .navbar-nav > .nav-link');
+        return cy.get('#navbarResponsive > .navbar-nav > .nav-item > .nav-link');
     };
 };
 
