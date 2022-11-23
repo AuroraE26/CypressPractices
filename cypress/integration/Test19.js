@@ -13,6 +13,8 @@ methods: getEditBox(), getTwoWayDataBinding(), getGender(), getEntrepreneur(), g
 
 ///<reference types='cypress'/>
 import HomePage from '../pageObjects/HomePage';
+import ProductPage from '../pageObjects/ProductPage';
+
 describe('', function(){
     before(function(){
         cy.fixture('example').then((data)=>{
@@ -23,6 +25,7 @@ describe('', function(){
 it('', function(){
     cy.visit('https://rahulshettyacademy.com/angularpractice/');
     const homePage = new HomePage();
+    const productPage = new ProductPage();
     homePage.getEditBox().type(this.data.name);
     homePage.getGender().select(this.data.gender);
     homePage.getTwoWayDataBinding().should('have.value',this.data.name);
@@ -33,5 +36,6 @@ it('', function(){
         cy.get(this.data.productName).each((el,index,list)=>{
             cy.selectProduct(el);
         });
+        productPage.checkOutButton().click();
     });
 });

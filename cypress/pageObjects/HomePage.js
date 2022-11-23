@@ -13,7 +13,7 @@ class HomePage{
         return cy.get('#inlineRadio3');
     };
     getShopTab(){
-        return cy.get(':nth-child(2) > .nav-link');
+        return cy.get('a[class="nav-link"]').eq(1);
     }
 };
 export default HomePage;
