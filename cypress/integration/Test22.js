@@ -30,7 +30,7 @@ describe('', function(){
     });
 
 it('', function(){
-    cy.visit('https://rahulshettyacademy.com/angularpractice/');
+    cy.visit(Cypress.env('url')+'/angularpractice/');
     const homePage = new HomePage();
     const productPage = new ProductPage();
     homePage.getEditBox().type(this.data.name);
@@ -59,5 +59,16 @@ it('', function(){
             var total = res[1].trim();
             expect(Number(total)).to.equal(sum);
         })
+
+        //-----------TEST 21 Starts here 
+        // cy.contains('Checkout').click();
+        // cy.get('#country').type('India');
+        // cy.get('.suggestions>ul>li>a').click();
+        // cy.get('#checkbox2').click({force:true});
+        // cy.get('input[value="Purchase"]').click();
+        // cy.get('div[class*="alert"]').then((element)=>{
+        //     const actualText=element.text();
+        //     expect(actualText.includes('Success')).to.be.true;
+        // });
     });
 });

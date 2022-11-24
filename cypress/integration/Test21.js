@@ -15,7 +15,6 @@ Force click on the checkbox of terms and conditions and clicks on submit button.
 */
 
 ///<reference types='cypress'/>
-import { includes } from 'lodash';
 import HomePage from '../pageObjects/HomePage.js';
 import ProductPage from '../pageObjects/ProductPage';
 
@@ -27,7 +26,7 @@ describe('', function(){
     });
 
 it('', function(){
-    cy.visit('https://rahulshettyacademy.com/angularpractice/');
+    cy.visit(Cypress.env('url')+'/angularpractice/');
     const homePage = new HomePage();
     const productPage = new ProductPage();
     homePage.getEditBox().type(this.data.name);

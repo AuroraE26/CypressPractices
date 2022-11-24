@@ -171,5 +171,9 @@
   "bugs": {
     "url": "https://github.com/AuroraE26/CypressPractices/issues"
   },
-  "homepage": "https://github.com/AuroraE26/CypressPractices#readme"
+  "homepage": "https://github.com/AuroraE26/CypressPractices#readme",
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "mochawesome": "^7.1.3"
+  }
 }

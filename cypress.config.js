@@ -13,6 +13,7 @@ TEST 20: IMPORTANT CYPRESS CONFIGURATION INFORMATION
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
+  projectId: 'bea3y8',
   defaultCommandTimeout: 8000,
   pageLoadTimeout: 30000,
   reporter:'mochawesome',
