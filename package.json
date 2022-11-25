@@ -1,0 +1,23 @@
+{
+  "name": "cypresspractices",
+  "version": "1.0.0",
+  "description": "Automated (UI + Integration) Tests using Cypress with Mocha and Cucumber frameworks",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules\\.bin\\cypress run",
+    "headTest": "npm run test ----headed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AuroraE26/CypressPractices.git"
+  },
+  "author": "Aurora Escalera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AuroraE26/CypressPractices/issues"
+  },
+  "homepage": "https://github.com/AuroraE26/CypressPractices#readme",
+  "dependencies": {
+    "cypress": "^11.2.0"
+  }
+}
