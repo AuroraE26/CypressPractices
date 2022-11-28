@@ -31,11 +31,11 @@ it('', function(){
     cy.visit(Cypress.env('url')+'/angularpractice/');
     const homePage = new HomePage();
     const productPage = new ProductPage();
-    homePage.getEditBox().type(this.data.name);
-    homePage.getGender().select(this.data.gender);
-    homePage.getTwoWayDataBinding().should('have.value',this.data.name);
-    homePage.getEditBox().should('have.attr','minlength',2);
-    homePage.getEntrepreneur().should('be.disabled');
+    // homePage.getEditBox().type(this.data.name);
+    // homePage.getGender().select(this.data.gender);
+    // homePage.getTwoWayDataBinding().should('have.value',this.data.name);
+    // homePage.getEditBox().should('have.attr','minlength',2);
+    // homePage.getEntrepreneur().should('be.disabled');
     homePage.getShopTab().click();
 
         cy.get(this.data.productName).each((el,index,list)=>{
@@ -58,15 +58,15 @@ it('', function(){
             expect(Number(total)).to.equal(sum);
         })
 
-        //-----------TEST 21 Starts here 
-        // cy.contains('Checkout').click();
-        // cy.get('#country').type('India');
-        // cy.get('.suggestions>ul>li>a').click();
-        // cy.get('#checkbox2').click({force:true});
-        // cy.get('input[value="Purchase"]').click();
-        // cy.get('div[class*="alert"]').then((element)=>{
-        //     const actualText=element.text();
-        //     expect(actualText.includes('Success')).to.be.true;
-        // });
+// -----------TEST 21 Starts here 
+        cy.contains('Checkout').click();
+        cy.get('#country').type('India');
+        cy.get('.suggestions>ul>li>a').click();
+        cy.get('#checkbox2').click({force:true});
+        cy.get('input[value="Purchase"]').click();
+        cy.get('div[class*="alert"]').then((element)=>{
+            const actualText=element.text();
+            expect(actualText.includes('Success')).to.be.true;
+        });
     });
 });
