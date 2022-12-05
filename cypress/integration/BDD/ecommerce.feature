@@ -8,11 +8,28 @@ Feature: End to End Ecommerce validation
     And validate the total prices
     Then select the country submit and verify Thankyou
 
-    Scenario: Filling the form to shop
-    Given I open Ecommerce Page
-    When I fill the form details
-    |name|gender|
-    |bobz|Male|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    # Scenario: Filling the form to shop
+    # Given I open Ecommerce Page
+    # When I fill the form details
+    # |name|gender|
+    # |bobz|Male|
 
     # Then validate the forms behavior
     # And select the shop Page
